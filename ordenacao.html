@@ -35,7 +35,7 @@
         </p>
       </section>
 
-      <section>
+      <section data-center="false">
         <h2>Selection Sort</h2>
       </section>
 
@@ -54,14 +54,19 @@
       center: true,
       transition: 'none'
     });
-  </script>
 
-  <script>
-    Reveal.configure({
-      slideNumber: true
+    Reveal.addEventListener('slidechanged', function(event) {
+      if (event.indexh == 0) {
+        Reveal.configure({
+          center: true
+        });
+      } else {
+        Reveal.configure({
+          center: false
+        });
+      }
     });
   </script>
-
 
 </body>
 
