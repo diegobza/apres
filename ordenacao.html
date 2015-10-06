@@ -73,7 +73,18 @@
       border-color: transparent;
       border-style: solid;
       font-size: 60%;
+      color: #42AFFA;
+      opacity: 0.5;
       float: left;
+    }
+
+    div .v-idx.sel {
+      font-weight: bold;
+      opacity: 1;
+    }
+
+    div .v-elem.sel {
+      background-color: #0074C2;
     }
   </style>
   <link rel="stylesheet" href="https://tatulab.com/arquivos/layout/RevealJS/css/reveal.css">
@@ -396,24 +407,12 @@
             <div>
               <p>Vetor <b>A</b></p>
             </div>
-            <div class="v-elem">
-              4
-            </div>
-            <div class="v-elem">
-              7
-            </div>
-            <div class="v-elem">
-              1
-            </div>
-            <div class="v-elem">
-              8
-            </div>
-            <div class="v-elem">
-              5
-            </div>
-            <div class="v-elem">
-              3
-            </div>
+            <div class="v-elem"> 4 </div>
+            <div class="v-elem"> 7 </div>
+            <div class="v-elem"> 1 </div>
+            <div class="v-elem"> 8 </div>
+            <div class="v-elem"> 5 </div>
+            <div class="v-elem"> 3 </div>
           </div>
         </section>
 
@@ -423,47 +422,23 @@
             <div>
               <p>Vetor <b>A</b></p>
             </div>
-            <div class="v-elem">
-              4
-            </div>
-            <div class="v-elem">
-              7
-            </div>
-            <div class="v-elem">
-              1
-            </div>
-            <div class="v-elem">
-              8
-            </div>
-            <div class="v-elem">
-              5
-            </div>
-            <div class="v-elem">
-              3
-            </div>
+            <div class="v-elem"> 4 </div>
+            <div class="v-elem"> 7 </div>
+            <div class="v-elem"> 1 </div>
+            <div class="v-elem"> 8 </div>
+            <div class="v-elem"> 5 </div>
+            <div class="v-elem"> 3 </div>
           </div>
           <div class="vetor dir">
             <div>
               <p>Vetor <b>B</b></p>
             </div>
-            <div class="v-elem">
-
-            </div>
-            <div class="v-elem">
-
-            </div>
-            <div class="v-elem">
-
-            </div>
-            <div class="v-elem">
-
-            </div>
-            <div class="v-elem">
-
-            </div>
-            <div class="v-elem">
-
-            </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
           </div>
         </section>
 
@@ -473,53 +448,67 @@
             <div>
               <p>Vetor <b>A</b></p>
             </div>
-            <div class="v-elem">
-              4
-            </div>
-            <div class="v-elem">
-              7
-            </div>
-            <div class="v-elem">
-              1
-            </div>
-            <div class="v-elem">
-              8
-            </div>
-            <div class="v-elem">
-              5
-            </div>
-            <div class="v-elem">
-              3
-            </div>
-            <div class="v-idx">
-              0
-            </div>
-            <div class="v-idx">
-              1
-            </div>
-            <div class="v-idx">
-              2
-            </div>
-            <div class="v-idx">
-              3
-            </div>
-            <div class="v-idx">
-              4
-            </div>
-            <div class="v-idx">
-              5
-            </div>
+            <div class="v-elem"> 4 </div>
+            <div class="v-elem"> 7 </div>
+            <div class="v-elem"> 1 </div>
+            <div class="v-elem"> 8 </div>
+            <div class="v-elem"> 5 </div>
+            <div class="v-elem"> 3 </div>
+            <div class="v-idx"> 0 </div>
+            <div class="v-idx"> 1 </div>
+            <div class="v-idx"> 2 </div>
+            <div class="v-idx"> 3 </div>
+            <div class="v-idx"> 4 </div>
+            <div class="v-idx"> 5 </div>
           </div>
           <div class="vetor dir">
             <div>
               <p>Vetor <b>B</b></p>
             </div>
-            <div class="v-elem"></div>
-            <div class="v-elem"></div>
-            <div class="v-elem"></div>
-            <div class="v-elem"></div>
-            <div class="v-elem"></div>
-            <div class="v-elem"></div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
+            <div class="v-idx"> 0 </div>
+            <div class="v-idx"> 1 </div>
+            <div class="v-idx"> 2 </div>
+            <div class="v-idx"> 3 </div>
+            <div class="v-idx"> 4 </div>
+            <div class="v-idx"> 5 </div>
+          </div>
+        </section>
+
+        <section>
+          <h3>Selection Sort</h3>
+          <div class="vetor esq">
+            <div>
+              <p>Vetor <b>A</b></p>
+            </div>
+            <div class="v-elem"> 4 </div>
+            <div class="v-elem"> 7 </div>
+            <div class="v-elem sel"> 1 </div>
+            <div class="v-elem"> 8 </div>
+            <div class="v-elem"> 5 </div>
+            <div class="v-elem"> 3 </div>
+            <div class="v-idx"> 0 </div>
+            <div class="v-idx"> 1 </div>
+            <div class="v-idx sel"> 2 </div>
+            <div class="v-idx"> 3 </div>
+            <div class="v-idx"> 4 </div>
+            <div class="v-idx"> 5 </div>
+          </div>
+          <div class="vetor dir">
+            <div>
+              <p>Vetor <b>B</b></p>
+            </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
+            <div class="v-elem"> </div>
             <div class="v-idx"> 0 </div>
             <div class="v-idx"> 1 </div>
             <div class="v-idx"> 2 </div>
