@@ -1180,8 +1180,13 @@
 
         <section>
           <h3>Selection Sort</h3>
-          <pre class="line-numbers"><code class="language-cpp"><b>selectionSort</b>(A, n) {
-   A &lArr;
+          <pre><code class="nohighlight">selectionSort(A, n)
+{
+   for i&larr;0 to n-2
+      for j&larr;i+1 to n-1
+         if (A[i] > A[j])
+            swap(A[i], A[j])
+
 }</code></pre>
         </section>
       </section>
