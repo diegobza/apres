@@ -1265,19 +1265,37 @@
           <pre><code class="c">void selectionSort(int V[], int n)
 {
     int i, j, m;
-    for (i = 0; i < n - 1; i++) {
+    for (i = 0; i &lt; n - 1; i++) {
         m = i;
-        for (j = i + 1; j < n; j++)
-            if (V[j] < V[m])
+        for (j = i + 1; j &lt; n; j++)
+            if (V[j] &lt; V[m])
                 m = j;
-        swap(&V[i], &V[m]);
+        swap(&amp;V[i], &amp;V[m]);
     }
 }</code></pre>
         </section>
       </section>
 
       <section>
-        <h3>Bubble Sort</h3>
+        <section>
+          <h3>Bubble Sort</h3>
+        </section>
+        <section>
+          <h3>Bubble Sort</h3>
+          <br>
+          <p>Abaixo a implementação da Ordenação por Flutuação, ou <i>Bubble Sort</i>, na linguagem de programação C.</p>
+          <p>
+            <small><i>In-place algorithm</i></small>
+          </p>
+          <pre><code class="c">void bubbleSort(int V[], int n)
+{
+    int i, j;
+    for (i = 0; i &lt; n; i++)
+        for (j = 0; j &lt; n - 1; j++)
+            if(V[j] &gt; V[j + 1])
+                swap(&amp;V[j], &amp;V[j + 1]);
+}</code></pre>
+        </section>
       </section>
 
       <section>
