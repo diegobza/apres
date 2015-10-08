@@ -98,8 +98,8 @@
   <link rel="stylesheet" href="https://tatulab.com/arquivos/layout/RevealJS/css/reveal.css">
   <link rel="stylesheet" href="https://tatulab.com/arquivos/layout/RevealJS/css/theme/tatulab.css" id="theme">
 
-  <link rel="stylesheet" href="https://tatulab.com/arquivos/layout/HighlightJS/styles/tatulab.css">
-  <script src="https://tatulab.com/arquivos/layout/HighlightJS/highlight.pack.js"></script>
+  <link rel="stylesheet" href="https://tatulab.com/arquivos/layout/RevealJS/lib/css/zenburn.css">
+  <script src="https://tatulab.com/arquivos/layout/RevealJS/plugin/highlight/highlight.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
   </script>
@@ -1180,13 +1180,13 @@
 
         <section>
           <h3>Selection Sort</h3>
-          <pre><code class="nohighlight">selectionSort(A, n)
+          <pre><code class="c">void selectionSort(int V[], int n)
 {
-   for i&larr;0 to n-2
-      for j&larr;i+1 to n-1
-         if (A[i] > A[j])
-            swap(A[i], A[j])
-
+    int i, j;
+    for (i = 0; i < n - 1; i++)
+        for (j = i + 1; j < n; j++)
+            if (V[i] > V[j])
+                swap(&V[i], &V[j]);
 }</code></pre>
         </section>
       </section>
